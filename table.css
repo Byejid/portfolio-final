@@ -1,0 +1,47 @@
+/* table.css */
+
+
+/* Table styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+/* Header styling */
+
+th {
+    background-color: #2ecc71;
+    /* Green background for table header */
+    color: #ffffff;
+    /* White text color for table header */
+}
+
+
+/* Row styling */
+
+tr:nth-child(even) {
+    background-color: #d5f5e3;
+    /* Light green background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* White background for odd rows */
+}
+
+
+/* Hover effect */
+
+tr:hover {
+    background-color: #27ae60;
+    /* Darker green background for hovered rows */
+}

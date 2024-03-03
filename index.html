@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfollio website practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/31b429dc0a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/b-logo.png" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Learning</a></li>
+                    <li><a href="#portfolio">Photography</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+                    <i class="fas fa-times" onclick="closeMenu();"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu();"></i>
+
+            </nav>
+
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>BYEJID</span><br>From Bangladesh.</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------About----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dp-1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="me"> I go by Byejid on the call. There are six people in my family. Without a sister, I have three brothers. My early years were spent at Nazirpur in Pirojpur, my village. I moved to Dhaka to finish my HSC after finishing my SSC. Later,
+                        in order to finish my B.Sc. in CSE, I relocated to KUET. I am attempting to pursue my long-held desire to work in this industry. Up until today, nothing particularly noteworthy has occurred that needs to be addressed.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills');">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience');">Experience</p>
+                        <p class="tab-links" onclick="openTab('education');">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Microsoft Office</span><br /> Power Point, Excel
+                            </li>
+                            <li><span>Driving </span><br />Car Driving</li>
+                            <li>
+                                <span>Photoshop</span><br /> Adobe
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2023- Current</span><br /> Car Driving
+                            </li>
+                            <li><span>Powerpoint </span><br />Worker</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently Studying </span><br />KUET</li>
+                            <li><span>2020</span><br />HSC from Dhaka Board</li>
+                            <li>
+                                <span>2018</span><br /> SSC from Barishal Board
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------services------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Learing</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I am learning HTML,CSS and JavaScript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Soft development</h2>
+                    <p>I am learning Java</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>DSA</h2>
+                    <p>I am learning and practicing Data Structure and Algorithm</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------Poftfolio------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Photography</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bike-44.png">
+                    <div class="layer">
+                        <h3>Tour</h3>
+                        <p>Green model town</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bike-55.png">
+                    <div class="layer">
+                        <h3>Tour</h3>
+                        <p>Khilgao Flyover</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bike-33.png">
+                    <div class="layer">
+                        <h3>Tour</h3>
+                        <p>Green model Town</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------------------Contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 ckass="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hossainbyejid@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>01576747667</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61554451324763&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i
+                            ></a>
+                        <a href=" https://x.com/byejid012?t=fGKE0VWHnC7Sq51B2bQFgQ&s=08 "><i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/byejid-hossain-9b144b264"><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="submit.php" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Byejid. Made with <i class="fa-solid fa-heart"></i> by Youtube</p>
+        </div>
+    </div>
+
+
+    <script>
+        let tabLinks = document.querySelectorAll('.tab-links');
+        let tabContents = document.querySelectorAll('.tab-contents');
+
+        function openTab(tabName) {
+            tabLinks.forEach((tabLink) => {
+                tabLink.classList.remove('active-link');
+            });
+
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove("active-tab");
+            });
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        const sideMenu = document.getElementById('sidemenu');
+        console.log(sideMenu);
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyqmyQDkyS04B1iZ43yNfjgx4NY6Bdjxwd-6idyw8ePkOYlau4mCfkQ4vP8snWF6cHK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = 'Message set successfully';
+                    setTimeout(function() {
+                        msg.innerHTML = '';
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.style.color = 'red';
+                    msg.innerHTML = 'Failure';
+                    setTimeout(function() {
+                        msg.innerHTML = '';
+                    }, 5000);
+                    msg.style.color = '#61b752';
+                })
+        })
+    </script>
+
+</body>
+
+</html>
